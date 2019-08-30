@@ -19,7 +19,6 @@ ln -s $4 /home/$5/$linkpoint
 # If you store your notebooks on a Azure Files to be mounted on any VM, link it to the ~/notebooks/remote to be accessible on Jupyter
 # Convention: You have notebooks/<USERNAME> on your File Share
 
-# AW does ~/notebooks exist?
-# AW does mountpoint/notebooks exist?
-#ln -s $4/notebooks/$5 /home/$5/notebooks/remote
+test -d $4/notebooks/$5 || mkdir -p $4/notebooks/$5
+ln -s $4/notebooks/$5 /home/$5/notebooks/remote
 
