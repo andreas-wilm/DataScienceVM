@@ -288,7 +288,7 @@
                   "autoUpgradeMinorVersion": true,
                   "settings": {
                     "fileUris": [
-                      "https://raw.githubusercontent.com/Azure/DataScienceVM/master/Extensions/General/mountazurefiles.sh"
+                      "https://raw.githubusercontent.com/andreas-wilm/DataScienceVM/fixlinkerror/Extensions/General/mountazurefiles.sh"
                     ],
                     "commandToExecute": "[concat('bash mountazurefiles.sh ', parameters('storageAccountName'), ' ', parameters('storageAccountKey'), ' ', parameters('shareName'), ' ', parameters('mountpointPath'), ' ', parameters('adminUsername'))]"
                   }
