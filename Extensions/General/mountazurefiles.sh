@@ -20,6 +20,6 @@ ln -s $4 /home/$5/$linkpoint
 # Convention: You have notebooks/<USERNAME> on your File Share
 
 test -d $4/notebooks/$5 || mkdir -p $4/notebooks/$5
-test -d /home/$5/notebooks || /home/$5/notebooks
+test -d /home/$5/notebooks || mkdir -p /home/$5/notebooks
 ln -s $4/notebooks/$5 /home/$5/notebooks/remote
 
